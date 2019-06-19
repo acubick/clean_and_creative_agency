@@ -1,0 +1,187 @@
+@function rem($pixels, $context: $mainFontSize){
+	@if unitless($pixels){
+		$pixels: $pixels * 1px
+		}
+	@if unitless($context){
+		$context: $context * 1px
+		}
+	@return $pixels / $context * 1rem;
+	}
+
+@mixin size($width,$height: $width){
+	width:  $width;
+	height: $height;
+	}
+
+@mixin placeholder{
+	
+	::-webkit-input-placeholder{
+		@content;
+		}
+	
+	:-moz-placeholder{
+		@content;
+		}
+	
+	::-moz-placeholder{
+		@content;
+		}
+	
+	:-ms-input-placeholder{
+		@content
+		}
+	}
+
+@mixin on-event($self: false){
+
+	@if ($self){
+		&,
+		&:hover,
+		&:active,
+		&:focus{
+			@content;
+			}
+		} @else{
+		&:hover,
+		&:active,
+		&:focus{
+			@content;
+			}
+		}
+	}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context){
+	#{$context}
+	&{
+		@content;
+		}
+	}
+//////  Media screens
+// ----  Max ------//
+// Small devices
+@mixin sm-max {
+	@media (max-width: #{$screen-sm-min}) {
+		@content;
+	}
+}
+
+// Medium devices
+@mixin md-max {
+	@media (max-width: #{$screen-md-min}) {
+		@content;
+	}
+}
+
+// Large devices
+@mixin lg-max {
+	@media (max-width: #{$screen-lg-min}) {
+		@content;
+	}
+}
+@mixin lg-max-1050{
+	@media (max-width: #{$screen-lg-min-1050}) {
+		@content;
+	}
+}
+
+// Extra large devices
+@mixin xl-max {
+	@media (max-width: #{$screen-xl-min}) {
+		@content;
+	}
+}
+
+@mixin xl-max-plus {
+	@media (max-width: #{$screen-xl-min_plus}) {
+		@content;
+	}
+}
+// ---- min ----- //
+// Small devices
+@mixin sm {
+	@media (min-width: #{$screen-sm-min}) {
+		@content;
+	}
+}
+
+// Medium devices
+@mixin md {
+	@media (min-width: #{$screen-md-min}) {
+		@content;
+	}
+}
+
+// Large devices
+@mixin lg {
+	@media (min-width: #{$screen-lg-min}) {
+		@content;
+	}
+}
+@mixin lg-1050 {
+	@media (min-width: #{$screen-lg-min-1050}) {
+		@content;
+	}
+}
+
+// Extra large devices
+@mixin xl {
+	@media (min-width: #{$screen-xl-min}) {
+		@content;
+	}
+}
+
+// ------ breakpoints ---------- //
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+$screen-lg-min-1050: 1050px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+// Large tablets and desktops
+$screen-xl-min_plus: 1280px;
+// relative fonts
+@function strip-unit($number) {
+	@if type-of($number) == 'number' and not unitless($number) {
+		@return $number / ($number * 0 + 1);
+	}
+
+	@return $number;
+}
+
+@function calcFluidFontSize($f-min, $f-max, $w-min, $w-max, $units: px) {
+	$f-min: strip-unit($f-min);
+	$f-max: strip-unit($f-max);
+	$w-min: strip-unit($w-min);
+	$w-max: strip-unit($w-max);
+
+	$k: ($f-max - $f-min)/($w-max - $w-min);
+	$b: $f-min - $k * $w-min;
+
+	$b: $b + $units;
+
+	@return calc( #{$k} * 100vw + #{$b} );
+}
+@mixin fluidFontSize($f-min, $f-max, $w-min, $w-max, $fallback: false) {
+
+	font-size: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			font-size: $fallback;
+		}
+		font-size: calcFluidFontSize($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		font-size: $f-max;
+	}
+}
+

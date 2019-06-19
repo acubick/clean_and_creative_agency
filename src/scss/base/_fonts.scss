@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+// @import "../abstracts/font-face";
+/// test sassdoc
+/// @author acubick
+@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("roboto-example-bold", "../fonts/RobotoBold/RobotoBold", bold);
+@include font-face("BebasNeue-Bold", "../fonts/BebasNeue-Bold/BebasNeue-Bold", bold);
+@include font-face("OpenSansRegular", "../fonts/OpenSansRegular/OpenSansRegular");
+@include font-face("OpenSansRegularItalic", "../fonts/OpenSansRegularItalic/OpenSansRegularItalic");
+@include font-face("Kardinal-ExtraBold", "../fonts/Kardinal-ExtraBold/Kardinal-ExtraBold");
+@include font-face("Kardinal-Light", "../fonts/Kardinal-Light/Kardinal-Light");

@@ -1,0 +1,90 @@
+@charset "UTF-8";
+// 1. Configuration and helpers
+//TODO: назвать файл _breakpoints и _mixins, разобраться с медиазапросами
+@import 'abstracts/variables',
+//'abstracts/functions',
+'abstracts/mixins',
+'abstracts/font-face';
+// 2. Vendors
+//@import 'vendors/bootstrap';
+// 3. Base stuff
+@import 'base/base',
+'base/fonts',
+'base/typography',
+'base/helpers',
+'base/normalize';
+// 4. Layout-related sections
+@import
+'layout/navigation',
+'layout/header',
+'layout/slider',
+'layout/about',
+'layout/services',
+'layout/blog',
+'layout/team',
+'layout/portfolio',
+'layout/designs',
+'layout/contacts',
+'layout/footer',
+'layout/wrapper';
+// 5. Components
+@import 'components/button';
+// 6. Page-specific styles
+@import 'pages/home';
+// 7. Themes
+@import 'themes/default';
+//@import 'test';
+
+section{
+	//height: 1525vh;
+	
+	max-width: 1800px;
+	width: 100%;
+	margin: 0 auto;
+
+	padding: 0;
+
+	//background-color: yellow;
+}
+
+.container{
+	//height: 1625vh;
+
+	max-width: 1200px;
+	width: 100%;
+	//background-color: lightgray;
+
+	padding: 0 15px;
+	margin: 0 auto;
+
+}
+
+
+.section_title
+{
+	color: #454443;
+	font-family: "BebasNeue-Bold", sans-serif;
+	font-size: 87px;
+	font-weight: 400;
+	line-height: 80.59px;
+	text-transform: uppercase;
+	margin-bottom: 0px;
+	.title-orange{
+		color: $flamePea;
+	}
+}
+ul{
+	list-style-type: none;
+}
+.clearfix::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+body{
+	//outline: 1px solid red;
+	padding: 0;
+	margin: 0;
+	padding-bottom: 800px;
+}
+//@import 'media';

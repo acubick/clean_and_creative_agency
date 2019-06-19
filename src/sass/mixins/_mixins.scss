@@ -1,0 +1,19 @@
+.stripe {
+    height: 100px;
+    background-color: rgb(24, 211, 139);
+    z-index: 10;
+    border: 1px solid grey;
+    color: blueviolet;
+}
+
+@mixin zebra() {
+    @for $i from 1 through 7 {
+        @if ($i % 2==1) {
+            .stripe-#{$i} {
+                background-color: black;
+                color: white;
+                // @error 'Нет слоя с именем  в $z-indexes. '
+            }
+        }
+    }
+}
