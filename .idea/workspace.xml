@@ -1,24 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78484e53-1d19-42f7-b87d-63223c821c99" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/icons/icn_address.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/icons/icn_box.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/icons/icn_cloud.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/icons/icn_email.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/icons/icn_hand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/icons/icn_lamp.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/icons/icn_monitor.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/icons/icn_notice.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/icons/icn_phone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/icons/icn_picture.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/icons/icn_tag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/icons/icn_telega.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/icons/icn_umbrella.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/icons/icn_world.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/assets/img/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test.js" afterDir="false" />
-    </list>
+    <list default="true" id="78484e53-1d19-42f7-b87d-63223c821c99" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,6 +206,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/dist/assets" />
@@ -263,12 +247,12 @@
       <updated>1560868956476</updated>
       <workItem from="1560868957720" duration="1119000" />
       <workItem from="1560887563379" duration="1479000" />
-      <workItem from="1560924633900" duration="12731000" />
+      <workItem from="1560924633900" duration="12948000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15329000" />
+    <option name="totallyTimeSpent" value="15546000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="983" extended-state="0" />
