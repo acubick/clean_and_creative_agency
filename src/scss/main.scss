@@ -48,7 +48,7 @@ section{
 }
 
 .container{
-	//height: 1625vh;
+	outline: 1px solid red;
 
 	max-width: 1200px;
 	width: 100%;
@@ -73,6 +73,10 @@ section{
 		color: $flamePea;
 	}
 }
+
+.aside{
+	width: 28%;
+}
 ul{
 	list-style-type: none;
 }
@@ -82,9 +86,10 @@ ul{
 	display: table;
 }
 body{
-	//outline: 1px solid red;
+
 	padding: 0;
 	margin: 0;
 	padding-bottom: 800px;
+	//background-color: violet;
 }
 //@import 'media';
