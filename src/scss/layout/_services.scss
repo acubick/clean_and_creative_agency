@@ -1,0 +1,49 @@
+.services{
+  padding: 64px 0 84px;
+  background-color: #f4f2f2;
+}
+.services_aside{
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: -12px;
+}
+.services_content{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.services_items{
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.services_item{
+  width: 31%;
+  padding: 40px 25px 22px;
+  margin-top: 20px;
+
+  background-color: $white;
+  text-align: center;
+
+  .item_title{
+    color: $flamePea;
+    font-family: "Bebas Neue Bold", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36.59px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+   .item_info{
+     color: $text_blog;
+     font-family: "Open Sans", sans-serif;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 24px;
+     margin: 0;
+   }
+}
+
+
