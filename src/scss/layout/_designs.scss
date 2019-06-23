@@ -1,0 +1,92 @@
+.designs{
+  padding: 84px 0;
+  background-color: $concrete;
+}
+.designs_content{
+  display: flex;
+  justify-content: space-between;
+}
+.designs_aside{
+  display: flex;
+  align-self: flex-end;
+  margin-bottom: -18px;
+}
+.designs_cards{
+  width: 70.5%;
+}
+.designs_items{
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  li:hover{
+    cursor: pointer;
+    .designs_price{
+      color: $flamePea;
+    }
+
+  }
+}
+.designs_item {
+  background-color: $white;
+  width: 31%;
+  text-align: center;
+  padding: 50px 30px 23px;
+}
+.designs_item_title{
+  color: $text_team;
+  font-family: BebasNeue-Bold, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 0.8;
+  text-transform: uppercase;
+  margin: 34px 0 0;
+}
+.designs_item_subtitle{
+  color: $flamePea;
+  font-family: BebasNeue-Bold, sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.designs_item_text{
+  color: $text_services;
+  font-family: "OpenSansRegular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 26px;
+}
+.designs_price {
+  color: $text_services;
+  font-family: "BebasNeue-Bold", sans-serif;
+  font-size: 71px;
+  font-weight: 400;
+  line-height: 65.92px;
+  text-transform: uppercase;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+.designs_button {
+  width: 156px;
+  height: 49px;
+  background-color: $flamePea;
+  color: $white;
+  font-family: "BebasNeue-Bold", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36.59px;
+  text-transform: uppercase;
+  letter-spacing: 0.33px;
+  border: none;
+  margin: 10px auto 0;
+  padding-top: 6px;
+  transition: 0.5s ease-in-out;
+
+}
+.designs_button:hover{
+  color: darken($white, 5%);
+  background-color: lighten($flamePea, 5%);
+  cursor: pointer;
+}
