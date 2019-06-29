@@ -1,4 +1,4 @@
-.header{
+.header {
   background-image: url("../img/header.png");
   background-position: -40px -7px;
   width: 100%;
@@ -9,13 +9,58 @@
 
 }
 
-//************   SLIDER   ************//
 
-.slider{
+
+.slider__slick {
+  height: 390px;
   width: 69%;
   margin-left: -10px;
-  }
+  position: relative;
+  overflow: hidden;
+}
 
+.slider {
+
+}
+
+$border-width: 2px solid #9d9d9d;
+$height-arrow: 16px;
+ .slick-arrow{
+   height: 40px;
+   width: 40px;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   border-radius: 50%;
+   position: absolute;
+   top: 42%;
+   color: transparent;
+   font-size: 0;
+   background-color: rgba(127, 129, 133, 0.6);
+   border: none;
+   cursor: pointer;
+   z-index: 1;
+ }
+.slick-arrow:after{
+  content: '';
+  display: block;
+  width: $height-arrow;
+  height: $height-arrow;
+  border-top: $border-width;
+  border-left: $border-width;
+  border-right: none;
+  border-bottom: none;
+  position: absolute;
+  transform: translate3d(40%,-40%,0);
+}
+$pos-arrow: -20px;
+ .slick-prev{
+   left: 0;
+   transform: rotate(-45deg);
+ }
+ .slick-next{
+   right: 0;
+   transform: rotate(135deg);
+ }
 .content_title {
   height: 200px;
   min-width: 715px;
@@ -29,7 +74,8 @@
   &-orange {
     color: $flamePea;
   }
-   }
+}
+
 .content_subtitle {
   margin-top: 1px;
   margin-left: 10px;
@@ -40,12 +86,13 @@
   font-style: italic;
   line-height: 30px;
   //letter-spacing: 0.01px;
- }
+}
 
 .content_buttons {
   height: 57px;
   margin-top: 78px;
   padding-left: 10px;
+
   .btn {
     width: 180px;
     height: 100%;
@@ -71,5 +118,15 @@
     background-color: transparent;
     border: 3px solid #ffffff;
   }
- 
-  }
+
+}
+/* SLICK SLIDER */
+.my__arrows{
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  z-index: 1000;
+}
