@@ -18,16 +18,23 @@ $(document).ready(function () {
 		//анимируем переход на расстояние - top за 1000 мс
 		$('body,html').animate({scrollTop: top}, 1000);
 		// console.log( $(this));
+		$('.nav-toggle, #nav').removeClass("active");
+		// $("#nav").toggleClass("active");
+		
 	});
-	$('.slider__slick').slick({
-		                         
-	                          });
+	
+	
+	   /* Slider */
+	
+	$('.slider__slick').slick();
+	
 	
 	/* Menu nav toggle */
+	
 	$("#nav_toggle").on("click", function(event) {
 		event.preventDefault();
 		
-		$(this).toggleClass("active");
-		$("#nav").toggleClass("active");
+		$(this).toggleClass('active');
+		$('#nav').toggleClass('active');
 	});
 });

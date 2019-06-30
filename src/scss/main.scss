@@ -1,6 +1,5 @@
 @charset "UTF-8";
 // 1. Configuration and helpers
-//TODO: назвать файл _breakpoints и _mixins, разобраться с медиазапросами
 @import 'abstracts/variables',
 //'abstracts/functions',
 'abstracts/mixins',
@@ -43,7 +42,6 @@ section{
 }
 
 .container{
-	outline: 1px solid red;
 
 	max-width: 1200px;
 	width: 100%;
@@ -62,7 +60,7 @@ section{
 	font-weight: 400;
 	line-height: 80.59px;
 	text-transform: uppercase;
-	margin-bottom: 0px;
+	margin-bottom: 0;
 	.title-orange{
 		color: $flamePea;
 	}
