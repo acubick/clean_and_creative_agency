@@ -32,7 +32,8 @@ module.exports = {
         output: {
             filename: `${PATHS.assets}js/[name].js`,
             path: PATHS.dist,
-            publicPath: '/creative/'
+            publicPath: '/creative/',
+            // publicPath: '/'
         },
 
         module: {
@@ -111,7 +112,7 @@ module.exports = {
                                 },
                                 // optipng.enabled: false will disable optipng
                                 optipng: {
-                                    enabled: true,
+                                    enabled: false,
                                 },
                                 pngquant: {
                                     quality: '100',
@@ -210,10 +211,10 @@ module.exports = {
             //     canPrint: true
             // }),
             new CopyWebpackPlugin([
-                {
-                      from: `${PATHS.src}/img`,
-                      to: `${PATHS.assets}img`
-                  },
+                // {
+                //       from: `${PATHS.src}/img`,
+                //       to: `${PATHS.assets}img`
+                //   },
                 // {
                 //     from: `${PATHS.src}/fonts`,
                 //     to: `${PATHS.assets}fonts`

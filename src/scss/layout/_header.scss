@@ -1,7 +1,10 @@
 .header {
   background-image: url("#{$img_path}header.png");
   background-position: -40px -7px;
+  background-color: #292929;
   width: 100%;
+  min-width: 20px;
+  min-height: 20px;
   height: 897px;
   padding-top: 103px;
   display: flex;

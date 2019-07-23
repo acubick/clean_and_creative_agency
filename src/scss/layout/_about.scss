@@ -110,7 +110,13 @@ $tag_w: 85px;
     display: block;
     height: 100%;
     width: 100%;
-    background: $white url("#{$icons_path}icns_ttt.png") no-repeat center;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("#{$icons_path}icn_tag.png");
+    min-height: 30px;
+    min-width: 30px;
+
   }
 }
 

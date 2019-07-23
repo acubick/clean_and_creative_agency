@@ -7,9 +7,10 @@ import './scss/main.scss';
 // import './libs/bootstrap/bootstrap';
 
 $( document ).ready( function () {
+	// var is_safari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+	// console.log(is_safari);
 	
-	
-	var headerH = $( '.header' ).height(), scrollPos = $( window ).scrollTop(), navH = $( '.navigation' ).innerHeight();
+	let headerH = $( '.header' ).height(), scrollPos = $( window ).scrollTop(), navH = $( '.navigation' ).innerHeight();
 	
 	checkScroll( scrollPos, headerH );
 	$( document ).on( 'scroll', onScroll );
