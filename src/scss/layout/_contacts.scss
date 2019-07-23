@@ -1,57 +1,65 @@
-.contacts{
-   .container{
-     display: flex;
-   }
+.contacts {
+  .container {
+    display: flex;
+  }
 }
 
-.contacts_content{
+.contacts_content {
   display: flex;
   justify-content: space-between;
   width: 40%;
   background-color: $white;
 }
-.contacts__img-wrapper{
+
+.contacts__img-wrapper {
   height: 794px;
   width: 60%;
   position: relative;
-   .contacts__img{
-     min-width: 100%;
-     position: absolute;
-     top: 50%;
-     left: 50%;
-     transform: translate3d(-34%,-48%,0);
-     z-index: -100;
-   }
+
+  .contacts__img {
+    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-34%, -48%, 0);
+    z-index: -100;
+  }
 }
-.contacts_aside{
+
+.contacts_aside {
   width: 70%;
   padding: 82px 0 10px;
-  .contacts_title{
+
+  .contacts_title {
     width: 77%;
   }
-  .section_title{
+
+  .section_title {
     margin-top: 2px;
   }
 }
+
 .contacts_items {
   margin-bottom: 0;
 }
-  .contacts_item {
-    display: flex;
-    flex-direction: row;
-  }
+
+.contacts_item {
+  display: flex;
+  flex-direction: row;
+}
 
 .item_img {
-  width: 54px;
+  min-width: 54px;
   height: 54px;
   margin: 17px 0 42px;
 }
+
 .item_text {
   padding: 35px 31px 0;
 
   .item_title {
     color: $flamePea;
-    font-family: "BebasNeue-Bold", sans-serif;
+    font-family: $bebasNeueBold;
     font-size: 30px;
     font-weight: 400;
     line-height: 36.59px;
@@ -60,7 +68,7 @@
 
   .item_contact {
     color: $text_blog;
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: $openSansRegular;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;

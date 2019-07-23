@@ -2,6 +2,17 @@
   width: 100%;
   position: absolute;
   padding-top: 68px;
+  transition: all ease .7s;
+  &.fixed{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    padding-top: 15px;
+
+    background-color: #170505cc;
+    z-index: 300;
+  }
 
   .navigation_wrap {
     max-width: 1200px;
@@ -37,13 +48,13 @@
     margin: 24px 0 0 4px;
     font-size: 48px;
     line-height: 40px;
-    font-family: "BebasNeue-Bold", sans-serif;
+    font-family: $bebasNeueBold;
     color: $default-color;
     display: block;
   }
 
   .logo__name-text {
-    font-family: "Kardinal-ExtraBold", sans-serif;
+    font-family: $kardinalExtraBold;
     font-weight: normal;
     font-size: 14px;
     margin-top: -7px;
@@ -54,8 +65,7 @@
 }
 
 .menu {
-  //background-color: #fc5c65;
-
+  background-color: transparent;
 }
 
 .menu__items {
@@ -65,7 +75,7 @@
 
 .menu__item {
   a {
-    font-family: "BebasNeue-Bold", sans-serif;
+    font-family: $bebasNeueBold;
     font-size: 24px;
     text-transform: uppercase;
     text-decoration: none;
@@ -79,6 +89,9 @@
 
   a:hover {
     color: $default-color;
+  }
+  a.active{
+    color: lighten($flamePea, 5%);
   }
 }
 

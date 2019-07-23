@@ -32,7 +32,7 @@ module.exports = {
         output: {
             filename: `${PATHS.assets}js/[name].js`,
             path: PATHS.dist,
-            publicPath: '/'
+            publicPath: '/creative/'
         },
 
         module: {
@@ -106,15 +106,15 @@ module.exports = {
                             loader: 'image-webpack-loader',
                             options: {
                                 mozjpeg: {
-                                    progressive: true,
-                                    quality: 70
+                                    progressive: false,
+                                    quality: 100
                                 },
                                 // optipng.enabled: false will disable optipng
                                 optipng: {
-                                    enabled: false,
+                                    enabled: true,
                                 },
                                 pngquant: {
-                                    quality: '65-90',
+                                    quality: '100',
                                     speed: 4
                                 },
                                 gifsicle: {
@@ -210,10 +210,10 @@ module.exports = {
             //     canPrint: true
             // }),
             new CopyWebpackPlugin([
-                // {
-                //       from: `${PATHS.src}/img`,
-                //       to: `${PATHS.assets}img`
-                //   },
+                {
+                      from: `${PATHS.src}/img`,
+                      to: `${PATHS.assets}img`
+                  },
                 // {
                 //     from: `${PATHS.src}/fonts`,
                 //     to: `${PATHS.assets}fonts`

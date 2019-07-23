@@ -24,6 +24,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
+
 .blog__item{
   display: flex;
   justify-content: space-between;
@@ -35,6 +36,7 @@
   overflow: hidden;
   margin: 0;
   position: relative;
+
   .blog_item-img{
   
   }
@@ -48,7 +50,7 @@
 
   h4{
     vertical-align: bottom;
-    font-family: "BebasNeue-Bold", sans-serif;
+    font-family: $bebasNeueBold;
     font-size: 53px;
     font-weight: 400;
     line-height: 1;
@@ -58,7 +60,7 @@
   }
   h5{
     vertical-align: top;
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: $openSansRegular;
     font-size: 12px;
     font-weight: 700;
     line-height: 1px;
@@ -75,7 +77,7 @@
   padding-left: 10px;
   .blog__item-info-title{
     color: $text_team;
-    font-family: "BebasNeue-Bold", sans-serif;
+    font-family: $bebasNeueBold;
     font-size: 25px;
     font-weight: 400;
     line-height: 1;
@@ -87,7 +89,7 @@
 
   .blog__item-info-article{
     color: $text_blog;
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: $openSansRegular;
     font-size: 15px;
     font-weight: 400;
     line-height: 24px;
@@ -107,7 +109,6 @@
   position: relative;
   .item__last-img{
     margin: -13% 0 0 -24% ;
-    //width: 143%;
     z-index: -100;
     height: 657px;
     width: auto;
@@ -121,7 +122,7 @@
   color: $white;
   h4{
     vertical-align: bottom;
-    font-family: "BebasNeue-Bold", sans-serif;
+    font-family: $bebasNeueBold;
     font-size: 53px;
     font-weight: 400;
     line-height: 1;
@@ -131,7 +132,7 @@
   }
   h5{
     vertical-align: top;
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: $openSansRegular;
     font-size: 12px;
     font-weight: 700;
     line-height: 1px;
@@ -150,14 +151,14 @@
   left: 0;
   padding: 0 30px 28px;
   .blog__item-info-title--l{
-    font-family: "BebasNeue-Bold", sans-serif;
+    font-family: $bebasNeueBold;
     font-size: 25px;
     font-weight: 400;
     text-transform: uppercase;
     margin: 0;
   }
   .blog__item-info-article--l{
-    font-family: "OpenSansRegular", sans-serif;
+    font-family: $openSansRegular;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.15;

@@ -1,27 +1,19 @@
 .about {
-  //margin-top: -5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
-  *{
-    //outline: 1px dotted green;
-  }
 }
 
 .about_article{
   margin-top: 23px;
   margin-left: -3px;
-  *{
-    //outline: 1px dotted green;
-  }
 }
 
 .about_paragraph {
   width: 100%;
   height: auto;
   color: #636363;
-  font-family: "OpenSansRegular", sans-serif;
+  font-family: $openSansRegular;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -37,9 +29,6 @@ $tag_w: 85px;
   position: relative;
   display: flex;
   justify-content: flex-end;
-  *{
-    //outline: 1px dotted blue;
-  }
   background-color: #c63104;
   overflow: hidden;
   img{
@@ -52,7 +41,6 @@ $tag_w: 85px;
 .feature__items{
   width: 430px;
   height: 100%;
-  //position: relative;
   background-color: $white;
   display: flex;
   flex-direction: column;
@@ -65,9 +53,7 @@ $tag_w: 85px;
   display: flex;
   justify-content: center;
   z-index: 100;
-  //position: absolute;
   top: -7px;
-  //right: 0;
   margin-left: -78.5%;
 }
 .feature_item:first-child{
@@ -76,7 +62,7 @@ $tag_w: 85px;
 .feature_item-title {
   font-weight: 400;
   line-height: 36.59px;
-  font-family: "BebasNeue-Bold", sans-serif;
+  font-family: $bebasNeueBold;
   text-transform: uppercase;
   color: $white;
   width: 275px;
@@ -124,13 +110,13 @@ $tag_w: 85px;
     display: block;
     height: 100%;
     width: 100%;
-    background: $white url("../img/icons/icn_tag.png") no-repeat center;
+    background: $white url("#{$icons_path}icns_ttt.png") no-repeat center;
   }
 }
 
 .feature_item-info {
   color: $text_about;
-  font-family: "OpenSansRegular", sans-serif;
+  font-family: $openSansRegular;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;

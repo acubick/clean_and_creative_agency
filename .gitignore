@@ -3,4 +3,5 @@ node_modules
 # IntellijIdea files
 *.iml
 .idea
+fix.html
 out

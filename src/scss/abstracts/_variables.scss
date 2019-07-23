@@ -103,4 +103,16 @@ $dark-grey: rgb(68, 68, 68) !default;
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
+
+$img_path: "../img/";
+$icons_path: "../img/icons/";
+
+
 ul {padding-inline-start: 0;}
+$openSansRegular: "OpenSansRegular", sans-serif;
+$openSansRegularIt: "OpenSansRegularItalic", sans-serif;
+$openSans:  "Open Sans", sans-serif;
+
+$bebasNeueBold: "BebasNeue-Bold", sans-serif;
+
+$kardinalExtraBold: "Kardinal-ExtraBold", sans-serif;
